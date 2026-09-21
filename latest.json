@@ -1,0 +1,16 @@
+{
+  "version": "1.0.56",
+  "notes": "# GenSub 1.0.56\n\n## Cập nhật trong ứng dụng (mới)\n\n- Từ bản này, GenSub tự kiểm tra bản mới từ `server.gensub.vn` khi khởi động và lặp lại mỗi 6 giờ.\n- Thông báo ngay trong app: banner ngay dưới thanh tiêu đề và hộp thoại xem ghi chú phát hành.\n- Cập nhật một chạm: tự tải, cài đặt im lặng rồi tự khởi động lại bản mới.\n- Mục mới **Cài đặt → Giới thiệu & Cập nhật**: kiểm tra thủ công, bật/tắt tự kiểm tra và tuỳ chọn\n  \"Tự động cài đặt khi có bản mới\" (mặc định tắt).\n- Nếu đang có tác vụ chạy nền, app sẽ hỏi trước khi tiến hành cập nhật.\n\n## Ghi chú\n\n- Đây là bản đầu tiên có cơ chế tự cập nhật. Người dùng đang ở bản cũ hơn cần cài thủ công\n  bản này một lần; các bản sau sẽ được thông báo và cập nhật trực tiếp trong ứng dụng.\n",
+  "pub_date": "2026-09-21T10:53:19Z",
+  "mandatory": false,
+  "min_version": null,
+  "channel": "stable",
+  "build": "official",
+  "release_notes_url": "https://github.com/genseovn/gensub-releases/releases/tag/v1.0.56",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSZnB3YlhDM1VCVGtiUFo2TE8veGJheWlZbkhJVUlGUVNmOVQ0YW8vSmV1VmFhYitnRjhHSHQxQUR1UTN4Q3FvMnd6R2JLVUwyMVdCejNFelh2SGNya2ZpMG1lSXo4ZndVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5OTg3Nzc0CWZpbGU6R2VuU3ViXzEuMC41Nl94NjQtc2V0dXAuZXhlCjBoT0g5bkFEblRFTXJWM0UrZFBveVc2YzhyS1h2YXU1U2NvVXZlYU9OdUMxOEVZSGFjUkVxd2lnczF6VVE5c2dkVm9KaVpKNWlWZXNBZGVDREZHUUJnPT0K",
+      "url": "https://github.com/genseovn/gensub-releases/releases/tag/v1.0.56/download/GenSub_1.0.56_x64-setup.exe"
+    }
+  }
+}
