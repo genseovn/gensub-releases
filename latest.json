@@ -1,16 +1,16 @@
 {
-  "version": "1.0.58",
-  "notes": "# GenSub 1.0.58\n\n## Sửa lỗi tự khởi động lại sau khi cập nhật\n\n- Bản 1.0.57 cài xong bản mới nhưng không tự mở lại (lỗi cờ `/R` của trình cài đặt NSIS).\n- Từ bản này, sau khi cài xong, GenSub tự chờ installer hoàn tất rồi mở lại ứng dụng.\n- Người dùng đang ở 1.0.57 cần mở lại app thủ công một lần sau khi cập nhật lên 1.0.58;\n  các bản sau đó sẽ tự khởi động lại.\n\n## Ghi chú\n\n- Không thay đổi gì khác về giao diện hay quy trình làm việc.\n",
-  "pub_date": "2026-09-21T15:51:48Z",
+  "version": "1.0.59",
+  "notes": "# GenSub 1.0.59\n\n## Hoàn thiện tự khởi động lại sau cập nhật\n\n- Trình trợ giúp khởi động lại giờ chờ installer **cài xong hoàn toàn** rồi mới mở lại ứng dụng,\n  tránh mở app khi file còn đang được ghi và làm hỏng bản cài.\n- Cập nhật im lặng vẫn tự tải, tự cài và tự mở lại như thiết kế.\n\n## Ghi chú\n\n- Người dùng đang ở 1.0.57 hoặc 1.0.58 nên cập nhật lên bản này; nếu app không tự mở lại\n  sau khi cài, chỉ cần mở GenSub thủ công một lần. Từ 1.0.59 trở đi quy trình đã hoàn chỉnh.\n",
+  "pub_date": "2026-09-21T17:05:38Z",
   "mandatory": false,
   "min_version": null,
   "channel": "stable",
   "build": "official",
-  "release_notes_url": "https://github.com/genseovn/gensub-releases/releases/tag/v1.0.58",
+  "release_notes_url": "https://github.com/genseovn/gensub-releases/releases/tag/v1.0.59",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSZnB3YlhDM1VCVG5Oa1lyQnh3R3AweU9rTlQwWTNFcWpQYzl4cE52UHRvWHhpdWNiMGxYSVVTR3pPWkVsWmRGOUlsRFBuZzd2LytLeHprZXdqWU9zVG4wcFVIOHEvZ3dNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMDA1ODg1CWZpbGU6R2VuU3ViXzEuMC41OF94NjQtc2V0dXAuZXhlCnU5b0pvcGwrVVJWM0VtcytUL010QXJnRldTcGFpVFVZRzZYUjFCYWlwdks0Qk5LMTRtYlEyMTIyWXM1Q0cyQThjSGc5emw5SzRlYUtaZHd4YzFvd0FRPT0K",
-      "url": "https://github.com/genseovn/gensub-releases/releases/download/v1.0.58/GenSub_1.0.58_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSZnB3YlhDM1VCVHY3MWltai9YM09pdHEzT3UxK1ZacTNydmlNemNIQ2pibVE2NE5pSTlNaWhTSlRiVmt6emxoYUg4R2IvNlFaazJZblkzVHhzcUI3Wjh4dlI2TUQwVmdRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMDEwMzE5CWZpbGU6R2VuU3ViXzEuMC41OV94NjQtc2V0dXAuZXhlCjVYYmJoWGI4NnBnb1BrSnBoWjNPa3drdnBMZFBQbjZGYXJmUXR3d29yT0JqYllNSmtYSURTZE93ZVA3QjZSSk16ekUyNFVrMjhpV1NQWGZlcWhXcUFRPT0K",
+      "url": "https://github.com/genseovn/gensub-releases/releases/download/v1.0.59/GenSub_1.0.59_x64-setup.exe"
     }
   }
 }
