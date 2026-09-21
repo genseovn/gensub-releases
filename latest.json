@@ -10,7 +10,7 @@
   "platforms": {
     "windows-x86_64": {
       "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSZnB3YlhDM1VCVGtiUFo2TE8veGJheWlZbkhJVUlGUVNmOVQ0YW8vSmV1VmFhYitnRjhHSHQxQUR1UTN4Q3FvMnd6R2JLVUwyMVdCejNFelh2SGNya2ZpMG1lSXo4ZndVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5OTg3Nzc0CWZpbGU6R2VuU3ViXzEuMC41Nl94NjQtc2V0dXAuZXhlCjBoT0g5bkFEblRFTXJWM0UrZFBveVc2YzhyS1h2YXU1U2NvVXZlYU9OdUMxOEVZSGFjUkVxd2lnczF6VVE5c2dkVm9KaVpKNWlWZXNBZGVDREZHUUJnPT0K",
-      "url": "https://github.com/genseovn/gensub-releases/releases/tag/v1.0.56/download/GenSub_1.0.56_x64-setup.exe"
+      "url": "https://github.com/genseovn/gensub-releases/releases/download/v1.0.56/GenSub_1.0.56_x64-setup.exe"
     }
   }
 }
