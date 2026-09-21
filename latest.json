@@ -1,16 +1,16 @@
 {
-  "version": "1.0.59",
-  "notes": "# GenSub 1.0.59\n\n## Hoàn thiện tự khởi động lại sau cập nhật\n\n- Trình trợ giúp khởi động lại giờ chờ installer **cài xong hoàn toàn** rồi mới mở lại ứng dụng,\n  tránh mở app khi file còn đang được ghi và làm hỏng bản cài.\n- Cập nhật im lặng vẫn tự tải, tự cài và tự mở lại như thiết kế.\n\n## Ghi chú\n\n- Người dùng đang ở 1.0.57 hoặc 1.0.58 nên cập nhật lên bản này; nếu app không tự mở lại\n  sau khi cài, chỉ cần mở GenSub thủ công một lần. Từ 1.0.59 trở đi quy trình đã hoàn chỉnh.\n",
-  "pub_date": "2026-09-21T17:05:38Z",
+  "version": "1.0.60",
+  "notes": "# GenSub 1.0.60\n\n## Cập nhật tự động hoàn chỉnh\n\n- Bộ cài giờ được chạy **sau khi GenSub đã thoát hẳn**, tránh xung đột với hộp thoại\n  xác nhận đóng ứng dụng (nguyên nhân khiến bản cài bị huỷ trước đó).\n- Sau khi cài xong, ứng dụng tự mở lại bản mới; không cần thao tác thủ công.\n- Toàn bộ gói tải về vẫn được xác minh chữ ký minisign trước khi cài.\n\n## Ghi chú\n\n- Từ bản này quy trình cập nhật một chạm đã hoàn chỉnh: thông báo → tải → cài im lặng → tự mở lại.\n",
+  "pub_date": "2026-09-21T17:54:08Z",
   "mandatory": false,
   "min_version": null,
   "channel": "stable",
   "build": "official",
-  "release_notes_url": "https://github.com/genseovn/gensub-releases/releases/tag/v1.0.59",
+  "release_notes_url": "https://github.com/genseovn/gensub-releases/releases/tag/v1.0.60",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSZnB3YlhDM1VCVHY3MWltai9YM09pdHEzT3UxK1ZacTNydmlNemNIQ2pibVE2NE5pSTlNaWhTSlRiVmt6emxoYUg4R2IvNlFaazJZblkzVHhzcUI3Wjh4dlI2TUQwVmdRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMDEwMzE5CWZpbGU6R2VuU3ViXzEuMC41OV94NjQtc2V0dXAuZXhlCjVYYmJoWGI4NnBnb1BrSnBoWjNPa3drdnBMZFBQbjZGYXJmUXR3d29yT0JqYllNSmtYSURTZE93ZVA3QjZSSk16ekUyNFVrMjhpV1NQWGZlcWhXcUFRPT0K",
-      "url": "https://github.com/genseovn/gensub-releases/releases/download/v1.0.59/GenSub_1.0.59_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSZnB3YlhDM1VCVGdTb3dTTERBMFpLZDBoYlNxZGtTbjlmS1QrYXB0L3lKaHdTVFJQM1NiR1NOZFhjOFIybXJ3QS9jSEw4VmxPTHBTUk9BRkpCS1hjb3Y1THNSUEoyZndVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMDEzMjI5CWZpbGU6R2VuU3ViXzEuMC42MF94NjQtc2V0dXAuZXhlCmx5ZitRUGRqTGluUWVtOVBMZU1KQWJIUWdSSDdPbnZ0b1EvL2FOZG5pdmNaeFk2NkJCUDIvSGNRc0VPMnpsem5PNjNFTW1qVTF4R3NYbCtqdVgvc0J3PT0K",
+      "url": "https://github.com/genseovn/gensub-releases/releases/download/v1.0.60/GenSub_1.0.60_x64-setup.exe"
     }
   }
 }
