@@ -1,16 +1,16 @@
 {
-  "version": "1.0.61",
-  "notes": "# GenSub 1.0.61\n\n## Sửa lỗi không mở được dự án cũ\n\n- Nguyên nhân: bộ nhớ đệm localStorage đầy (quota) làm thao tác ghi cấu hình\n  thất bại và chặn luôn việc mở dự án — app báo \"Không thể mở dữ liệu dự án\".\n- Từ bản này, việc ghi cache không bao giờ chặn mở dự án: khi hết dung lượng,\n  app tự dọn các mục cũ nhất rồi thử lại, nếu vẫn không được thì bỏ qua an toàn.\n- Khi khởi động, app dọn cache của các dự án đã xóa và giới hạn số mục lưu lại\n  (12 cấu hình gần nhất, 10 nhật ký tác vụ gần nhất) nên tình trạng đầy bộ nhớ\n  không tái diễn.\n\n## Ghi chú\n\n- Dữ liệu dự án thật vẫn nằm trong kho dự án (không bị ảnh hưởng bởi bản sửa này).\n",
-  "pub_date": "2026-09-22T01:42:26Z",
+  "version": "1.0.62",
+  "notes": "# GenSub 1.0.62\n\n## Thanh tiêu đề gọn hơn\n\n- Ẩn nhãn \"PRONOUN-V2\" và tên dự án ở giữa thanh tiêu đề để giao diện sạch hơn.\n- Bấm vào **số phiên bản** (ví dụ v1.0.62) để mở nhanh **Cài đặt → Giới thiệu & Cập nhật**,\n  nơi có thể kiểm tra và cài bản mới.\n\n## Ghi chú\n\n- Không thay đổi quy trình làm việc. Bản này dùng để kiểm chứng luồng cập nhật trong app.\n",
+  "pub_date": "2026-09-23T01:53:50Z",
   "mandatory": false,
   "min_version": null,
   "channel": "stable",
   "build": "official",
-  "release_notes_url": "https://github.com/genseovn/gensub-releases/releases/tag/v1.0.61",
+  "release_notes_url": "https://github.com/genseovn/gensub-releases/releases/tag/v1.0.62",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSZnB3YlhDM1VCVGhkR0tYV1ZsOEZCOUNCSXR1UUtXZTdEWWE5Sk82RW1OMG0vQVJzTTRoaWJici9DNmduajNCa1JRL1NMejVrTjVzU2hhMDREUUNSSmdmSHB1VzJMRncwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMDQxMzI3CWZpbGU6R2VuU3ViXzEuMC42MV94NjQtc2V0dXAuZXhlCnhZZVhxSDcvQVM3dVRkenJweUY3T0ZiRUZYa2IweUFRTG1HQ2p1SS9Vd1lhMU9iZGl5YzBJazJTSkJxTXl6T21TN29USHVQN2xXMTlBQS9sbGRWUEJ3PT0K",
-      "url": "https://github.com/genseovn/gensub-releases/releases/download/v1.0.61/GenSub_1.0.61_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSZnB3YlhDM1VCVHNjeXNsUjIwVC9DaUU0bGNHQk5RZkhvVVVEd3I1YzUwSFV4bWUrakFYY2FKZVBlL1NTQnVBRXRXcWVGWVV4VTZpbHprRzBTcXo1bkM2cU9XbW9kYmdvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMTI4NDEyCWZpbGU6R2VuU3ViXzEuMC42Ml94NjQtc2V0dXAuZXhlClNWK0FFUXBTQkl6WWN5ZDRHc3ltZldUb0dWN0F4UFdOUEJrMmNtS1VVd0R2enJHK2hQdTdlVE1OZDRSdVkzQ29qc0gvUzJkb05icU93QnVVUzdiT0NBPT0K",
+      "url": "https://github.com/genseovn/gensub-releases/releases/download/v1.0.62/GenSub_1.0.62_x64-setup.exe"
     }
   }
 }
