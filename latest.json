@@ -1,16 +1,16 @@
 {
-  "version": "1.0.62",
-  "notes": "# GenSub 1.0.62\n\n## Thanh tiêu đề gọn hơn\n\n- Ẩn nhãn \"PRONOUN-V2\" và tên dự án ở giữa thanh tiêu đề để giao diện sạch hơn.\n- Bấm vào **số phiên bản** (ví dụ v1.0.62) để mở nhanh **Cài đặt → Giới thiệu & Cập nhật**,\n  nơi có thể kiểm tra và cài bản mới.\n\n## Ghi chú\n\n- Không thay đổi quy trình làm việc. Bản này dùng để kiểm chứng luồng cập nhật trong app.\n",
-  "pub_date": "2026-09-23T01:53:50Z",
+  "version": "1.0.63",
+  "notes": "# GenSub 1.0.63\n\n## Nhận dạng phụ đề Qwen3-ASR (mới)\n\n- Thêm engine nhận dạng giọng nói **Qwen3-ASR 0.6B/1.7B** kèm Qwen3-ForcedAligner, chạy ngay trên máy:\n  chia đoạn 300 giây và tự tách nhỏ khi thiếu bộ nhớ, model chỉ tải một lần.\n- **Menu nhận dạng mới**: chuột phải vào video → *\"Nhận dạng phụ đề (âm thanh)\"* để chạy hàng loạt\n  cho một hoặc nhiều video; có mục tuỳ chọn nâng cao và cây chọn phương pháp theo nhóm.\n- Tái sử dụng audio STT đã tách trước đó và bỏ qua model đã tải sẵn (faster-whisper / qwen3).\n- Câu phụ đề được giới hạn **50 ký tự / 5 giây**, cắt tại khoảng nghỉ và dấu câu tự nhiên.\n- Menu dropdown hiển thị đúng con trỏ chuột.\n\n## Sửa lỗi\n\n- Xuất video đa ngôn ngữ **không còn ghi thêm file .srt** cạnh video; phụ đề chỉ xuất khi bạn chọn.\n- Tên video ở danh sách bên trái hiển thị đầy đủ theo bề rộng thanh (thanh hẹp vẫn giữ `.mp4`).\n",
+  "pub_date": "2026-09-26T17:37:12Z",
   "mandatory": false,
   "min_version": null,
   "channel": "stable",
   "build": "official",
-  "release_notes_url": "https://github.com/genseovn/gensub-releases/releases/tag/v1.0.62",
+  "release_notes_url": "https://github.com/genseovn/gensub-releases/releases/tag/v1.0.63",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSZnB3YlhDM1VCVHNjeXNsUjIwVC9DaUU0bGNHQk5RZkhvVVVEd3I1YzUwSFV4bWUrakFYY2FKZVBlL1NTQnVBRXRXcWVGWVV4VTZpbHprRzBTcXo1bkM2cU9XbW9kYmdvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwMTI4NDEyCWZpbGU6R2VuU3ViXzEuMC42Ml94NjQtc2V0dXAuZXhlClNWK0FFUXBTQkl6WWN5ZDRHc3ltZldUb0dWN0F4UFdOUEJrMmNtS1VVd0R2enJHK2hQdTdlVE1OZDRSdVkzQ29qc0gvUzJkb05icU93QnVVUzdiT0NBPT0K",
-      "url": "https://github.com/genseovn/gensub-releases/releases/download/v1.0.62/GenSub_1.0.62_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSZnB3YlhDM1VCVHRtSkszcU56Z2Y4TnhObWFjSEE5azBMVzBhVXBoNDhralluMFNqUVFtY2srWFhQN0I3RDVrcVJUaUIzZUZXTWF1SXBRZkdvWnRpTkEwQkRtTmhYT3dBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkwNDQ0MjEyCWZpbGU6R2VuU3ViXzEuMC42M194NjQtc2V0dXAuZXhlCk9NWk5kRDZYKzA4dWdYWEQ0ZHluV0pUTmpIVmVBR3J4YVBGTFZBWEY0Y2dSYUp1UEdLNENhMGF0SHNBY0tsczJCRENOMVlsNEtzOU40c0N2MjRrQkJBPT0K",
+      "url": "https://github.com/genseovn/gensub-releases/releases/download/v1.0.63/GenSub_1.0.63_x64-setup.exe"
     }
   }
 }
