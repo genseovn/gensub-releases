@@ -1,16 +1,16 @@
 {
-  "version": "1.0.68",
-  "notes": "# GenSub 1.0.68\n\n## Phân tích giọng cho dịch Trung → Việt (thử nghiệm, mặc định tắt)\n\n- Trong tab **Dịch thuật**, chọn nguồn Trung → đích Việt và bật *\"Phân tích giọng cho dịch · thử nghiệm\"*.\n  Nút Dịch sẽ chờ phân tích xong phạm vi trước khi gửi yêu cầu; STT/OCR có thể chuẩn bị audio song song.\n- Chạy **hoàn toàn trên máy**: CPU ONNX (classifier giọng + Silero VAD), tải model ~320 MB ở lần đầu\n  (có tiến độ và nút dừng); cache riêng trong AppData, tự dọn sau 7 ngày.\n- Bằng chứng giọng chỉ là **gợi ý âm học mềm** (`gender/source/version/reason`): không xác nhận giới tính\n  sinh học, tuổi, nhân vật hay quan hệ; nhãn chưa rõ giữ `unknown`; khóa người dùng và lời thoại rõ luôn\n  ưu tiên. Không phân định người nói tự động, không thêm lượt AI nhận diện giới tính, không cắt lời thoại.\n- Gợi ý được gửi kèm prompt dịch GS Credit/OpenCode V1/V2 (kể cả cửa sổ SRT và batch) và V3\n  (`voice_evidence`). **Không tải video/audio lên server** để phân tích giọng.\n- V3 cần capability server `film_translation_voice_evidence_v1` — server đã deploy policy `film-zh-vi-3.1`\n  ngày 03/10; server cũ sẽ báo lỗi rõ trước khi tạo phiên, không tự bỏ metadata.\n- Dừng/lỗi vẫn giữ phụ đề STT/OCR hợp lệ; checkpoint theo cửa sổ, mở lại app tiếp tục từ cache; câu sửa tay,\n  nhóm TTS và chữ ký audio được bảo toàn.\n- Bảng So sánh bản dịch có thêm thời gian phân tích (`voiceAnalysisMs`, `voiceAnalysisTotalMs`,\n  `voicePreparationMs`) và kèm harness benchmark.\n- Lưu ý: tính năng đang thử nghiệm; **chưa benchmark ba phim hoặc chấm chất lượng thủ công**, mục tiêu\n  overhead 5–10% và giảm lỗi xưng hô chưa được xác nhận.\n\n## Sửa lỗi\n\n- Cập nhật contract test bảng phụ đề theo class `cursor-text` đã thêm từ 1.0.67 (chỉ ảnh hưởng kiểm thử).\n",
-  "pub_date": "2026-10-03T08:52:05Z",
+  "version": "1.0.69",
+  "notes": "# GenSub 1.0.69\n\n- Thêm “Dịch theo lượt thoại · thử nghiệm”, mặc định tắt, hỗ trợ Trung → Việt qua GS Credit và OpenCode.\n- Đối chiếu audio–video có chọn lọc để cảnh báo câu lẫn nhiều lượt nói; giữ phần nguồn chưa phân bổ để xem lại, không tự tách câu hoặc nhóm TTS.\n- Bổ sung ngữ cảnh cổ trang/hiện đại có khóa và kiểm tra danh xưng thiếu căn cứ; sửa chọn lọc bằng model đang cấu hình.\n- Có tiến độ, hủy, checkpoint và cache local; bảo vệ câu sửa tay, ID/thời gian và audio hiện có. Server cũ chưa hỗ trợ sẽ báo rõ.\n\nPhân tích CPU có thể tăng đáng kể thời gian. Kết quả chưa rõ giữ nguyên trạng thái cần xem; bản thử nghiệm chưa được nghiệm thu trên ba phim dài, chưa cam kết mức cải thiện xưng hô.\n",
+  "pub_date": "2026-10-03T15:42:44Z",
   "mandatory": false,
   "min_version": null,
   "channel": "stable",
   "build": "official",
-  "release_notes_url": "https://github.com/genseovn/gensub-releases/releases/tag/v1.0.68",
+  "release_notes_url": "https://github.com/genseovn/gensub-releases/releases/tag/v1.0.69",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSZnB3YlhDM1VCVHZFMEV6MFNseTVzeWVSZWw4THFPb3ZUQ0xvQlpCam52b2w1cXVQUG02YUtFMjBIbTlDM1I4aFRrR3FuN1hTVTgvVTlEbnNDYUsrV1MrUjk2MUNnc3d3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMDE3NTA3CWZpbGU6R2VuU3ViXzEuMC42OF94NjQtc2V0dXAuZXhlCjZCeXV0REdDazFkZC9nTm1hdFlmR2hiekkrNkhIQ1RjWUxVaHZjcmI0bnlaVnBiSmNZdVRtQ0djdS9SS1NSR0t0MXlCOEdINXU2WlU1Z1hxWVFmMURnPT0K",
-      "url": "https://github.com/genseovn/gensub-releases/releases/download/v1.0.68/GenSub_1.0.68_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSZnB3YlhDM1VCVGxCa2JDaE03VHZMZnUzRjhweDdFdlZxbWdTT1gxZFU0SlJOMWVFWUVCRnZydVVJQmthSUJ6c3VyRkVFNXpjSzkxa3FHbFFzQjM5aGpXcmRnUGVQK1FVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMDM4NjgxCWZpbGU6R2VuU3ViXzEuMC42OV94NjQtc2V0dXAuZXhlCmprVG9xQXR2aitrYXpQYkQ3UUZLc1JneEI0d3FiY0plKzhYMnkzNzhUNnBLMnN0K2FGQkRmYyt2T2o5MUhxQXpOcEFjZ01nbEUrK0NQMlRGOFNIN0FnPT0K",
+      "url": "https://github.com/genseovn/gensub-releases/releases/download/v1.0.69/GenSub_1.0.69_x64-setup.exe"
     }
   }
 }
