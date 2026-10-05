@@ -1,16 +1,16 @@
 {
-  "version": "1.0.74",
-  "notes": "# GenSub 1.0.74\n\n## Bảng giá ngày & hạn mức xuất video (mới)\n\n- **Miễn phí 5 lượt xuất/ngày**. Các gói trả phí: **Basic 20 lượt/ngày** (149.000đ/tháng hoặc\n  1.490.000đ/năm), **Advanced 50 lượt/ngày** (299.000đ/tháng hoặc 2.990.000đ/năm),\n  **Unlimited** (599.000đ/tháng hoặc 5.990.000đ/năm).\n- Mọi gói đầy đủ tính năng và độ phân giải, **không watermark**; một thiết bị hoạt động; dịch cloud\n  tính riêng và gói Free cũng dùng được.\n- **Đếm theo từng file xuất**: giữ chỗ trước khi xuất, quyết toán khi xuất/QC thành công, tự nhả khi\n  hủy hoặc lỗi, thử lại không tính trùng; kết quả offline được ghi journal và đối soát khi có mạng.\n- Hạn mức reset **nửa đêm giờ Việt Nam**, không cộng dồn; lượt đã dùng giữ nguyên khi nâng cấp, gia hạn\n  hoặc đổi thiết bị; gói Free dùng chung theo thiết bị.\n- Khi hết lượt: hàng đợi tạm dừng và hiện **QR mua/nâng cấp** mà không mất việc; sau khi thanh toán\n  thành công, bấm **Tiếp tục xuất** để chạy tiếp.\n- Giữ nguyên quyền lợi gói đã mua trước đây tới hết hạn; nâng cấp giữa kỳ tính **pro-rata**, đổi chu kỳ\n  hoặc xuống gói áp dụng từ kỳ sau.\n- Trang giá công khai: **gensub.vn/bang-gia** (server và website đã cập nhật).\n\nBản cập nhật này được đặt ở chế độ **bắt buộc** để hạn mức ngày được áp dụng đồng bộ trên mọi máy.\n\n## Sửa lỗi\n\n- Sửa 2 lỗi mask: chạy lại ở chế độ cố định bị nhân đôi layer; rescan làm mất vị trí người dùng đã chỉnh.\n- Sửa toàn bộ 7 file test tồn đọng trước đây — suite frontend giờ **xanh hoàn toàn** (484 file pass).\n",
-  "pub_date": "2026-10-05T13:59:13Z",
-  "mandatory": true,
+  "version": "1.0.75",
+  "notes": "# GenSub 1.0.75\n\n- Bỏ dải nâng cấp dưới title bar. Mua gói trong badge tài khoản → Gói cước; thông tin quota và thời điểm reset nằm trong modal tài khoản.\n- Chia bảng giá thành 1, 3, 6, 12 tháng. Gói 3 tháng tặng 1 tháng (120 ngày), 6 tháng tặng 2 tháng (240 ngày), 12 tháng tặng 6 tháng (545 ngày). Gói 12 tháng giữ giá đã công bố, bằng 10 tháng.\n- Chọn gói mở ngay QR SePay, bỏ bước bấm Thanh toán QR lần nữa. Chống bấm trùng và đưa QR về đầu modal để dễ quét trên màn hình laptop.\n- Đồng bộ giá, ưu đãi và thời hạn trên gensub.vn/bang-gia. Giữ quota ngày, quyền lợi thuê bao đã mua và số lượt đã dùng; nâng cấp cùng chu kỳ vẫn giữ ngày hết hạn.\n",
+  "pub_date": "2026-10-05T16:33:11Z",
+  "mandatory": false,
   "min_version": "1.0.74",
   "channel": "stable",
   "build": "official",
-  "release_notes_url": "https://github.com/genseovn/gensub-releases/releases/tag/v1.0.74",
+  "release_notes_url": "https://github.com/genseovn/gensub-releases/releases/tag/v1.0.75",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSZnB3YlhDM1VCVG1xbzJJVzV6OXFrM0JWTkY4T2FRVUhzdk94ZHc1MmVxTFEzT1dRTkt5UjVlTm5CdFdmZ1ZEWllERk9VSk9BNDRlNzJCaEgwYUtXdXphb3NMc05vYVFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMjA4NzMzCWZpbGU6R2VuU3ViXzEuMC43NF94NjQtc2V0dXAuZXhlClB1Wk9kc01yRVAxeHRtblYwNTVjeTdVSjNsL09tOStVdXJLczhrNzhIUVRqc3hHbHdPTHptRUt4QWcwR2twM2xKdzJvVmhxOXRCOGVEaTdKL21tMEJBPT0K",
-      "url": "https://github.com/genseovn/gensub-releases/releases/download/v1.0.74/GenSub_1.0.74_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSZnB3YlhDM1VCVGdKS2hyZ3Z1VHRTNkJjWjhQL3Eya1FReDQ3Ykd1b0pVMjJ2K2VXK2VyVGxMMHdRMitRQWVMYTV5Q3o5SVl0OFZvRHcrZEJMNy96YXl4ZkxYRDl6S3c4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMjE2ODgzCWZpbGU6R2VuU3ViXzEuMC43NV94NjQtc2V0dXAuZXhlCnRSdHowZHFGZ1NqZGV6eitGV1dXVS9RbElaSmczS1UyNmtSR2FhWkdCNU5VOW0xdFJnM1VDS3JUZDBkekdHbExtVUVZQU8vS1Bzdm1PNzAyVkFwcURnPT0K",
+      "url": "https://github.com/genseovn/gensub-releases/releases/download/v1.0.75/GenSub_1.0.75_x64-setup.exe"
     }
   }
 }
