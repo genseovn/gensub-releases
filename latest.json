@@ -1,16 +1,16 @@
 {
-  "version": "1.0.76",
-  "notes": "# GenSub 1.0.76\n\n- Cải thiện V2 Trung → Việt cho câu chứa nhiều lượt thoại: phân biệt người nói, người được gọi và người được nhắc tới trong cùng lượt dịch.\n- Ưu tiên ảnh đúng những câu có nguy cơ nhầm xưng hô; rút gọn dữ liệu thời lượng gửi tới model.\n- Khi chưa đủ bằng chứng chọn chàng/nàng, dùng cách diễn đạt trung tính ở các cấu trúc đã kiểm tra và đánh dấu cần xem. Giữ tên và xưng hô người dùng đã khóa.\n- Giữ nguyên ID, mốc thời gian, cách nhóm câu và audio TTS hiện có; không thêm lượt AI để đoán giới tính.\r\n",
-  "pub_date": "2026-10-06T01:36:47Z",
+  "version": "1.0.77",
+  "notes": "# GenSub 1.0.77\n\n- Thêm WhisperX thử nghiệm: nhận diện lời nói, căn thời gian từng chữ và tùy chọn phân định người nói trong cùng quy trình. Nhãn người nói hiển thị trong bảng phụ đề và được dùng làm ngữ cảnh dịch GS Credit/OpenCode.\n- WhisperX có runtime riêng; phân định người nói cần quyền truy cập model Hugging Face. Thiết bị không tương thích GPU có thể chạy CPU. Chưa khẳng định nhanh hơn Faster-Whisper trên phim dài.\n- GS Credit V2/V3 và OpenCode V2 chọn những câu cần bằng chứng xưng hô cùng câu lân cận, bỏ qua phân tích giọng ở đoạn thuyết minh/hướng dẫn không có rủi ro. Vẫn dịch đầy đủ nguồn và giữ khóa thủ công, thời gian câu và TTS.\n- Tái sử dụng người nói WhisperX đáng tin và cache đã có; tiếp tục phiên V3 đang chạy với bằng chứng đã chốt, kể cả kết quả cuối chưa nhận đủ.\n- Faster-Whisper và WhisperX không tự bật Demucs ở chế độ xử lý tự động; vẫn giữ lựa chọn tách giọng chủ động.\n- WhisperX và các công tắc phân tích bổ sung giữ trạng thái thử nghiệm; không đổi engine mặc định hoặc tự gán giọng đọc TTS.\n",
+  "pub_date": "2026-10-06T04:18:32Z",
   "mandatory": false,
   "min_version": "1.0.74",
   "channel": "stable",
   "build": "official",
-  "release_notes_url": "https://github.com/genseovn/gensub-releases/releases/tag/v1.0.76",
+  "release_notes_url": "https://github.com/genseovn/gensub-releases/releases/tag/v1.0.77",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSZnB3YlhDM1VCVGs2WkRrcWNiTit2c2tlNlJQVjhoZnhHVWJibVFLQ2FkQmNkbGNBOUdzelJNODlzRklQL1ZMWUhxbWtvclhJZFFvdStHa1hxWTZMZzlQaHRQcTU5b0FBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMjUwNDMyCWZpbGU6R2VuU3ViXzEuMC43Nl94NjQtc2V0dXAuZXhlCk9yYTV3MWtzQXVySnFpbFNXVmpQRXBLZVdlVWtRMGkwWkVQRHVmZHJ3bTdUWWRCajYzRkNJWW1PeVZJb0RpSkVkRWRGQmlGNDZLOVdTNE9PVm0ya0NRPT0K",
-      "url": "https://github.com/genseovn/gensub-releases/releases/download/v1.0.76/GenSub_1.0.76_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSZnB3YlhDM1VCVGtNSWFuSFFRa0ZMTWRubHQxUE5YOVpRUkpnN0hxbERxOVdZMEhCV2J3R3k5dmxEeG0wSDA5UmdQTUc1WVFQaUZSUEE5Q05BRDF4LzY4cENIM2I5TFFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMjYwMjY2CWZpbGU6R2VuU3ViXzEuMC43N194NjQtc2V0dXAuZXhlCktSZllVVVlnYjEzM0kybkFXT2c2dWxFYVdDUHpqM1ZIQkxWZVN3MTBkc2RYS2ovTk9rcG9Fd2syNkYyZTFIemR2cDdrdzlhYTYvMTZNNWxIQkFIUkRBPT0K",
+      "url": "https://github.com/genseovn/gensub-releases/releases/download/v1.0.77/GenSub_1.0.77_x64-setup.exe"
     }
   }
 }
