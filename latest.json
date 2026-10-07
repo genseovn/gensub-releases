@@ -1,16 +1,16 @@
 {
-  "version": "1.0.78",
-  "notes": "# GenSub 1.0.78\n\n- Faster-Whisper tự kiểm tra khả năng chạy thực tế trong chế độ Auto. Khi GPU không dùng được hoặc nhận diện bị kẹt, tác vụ có thể tiếp tục bằng CPU với cùng model và phần đã nhận diện được lưu lại. Lỗi không phục hồi được có thông báo rõ để người dùng xử lý.\n- Hiển thị bước đang chạy, thời gian chờ, cảnh báo và tiến độ nhận diện; tránh giữ một tỷ lệ cố định khiến người dùng tưởng tác vụ vẫn tiến triển.\n- Phân định người nói Sherpa dùng chung kết quả phân tích lượt thoại và người nói, tránh quét toàn bộ audio hai lần. Có cache, checkpoint và tiến độ theo lượng audio đã xử lý; giữ các gán người nói thủ công.\n- Phụ đề hiển thị ưu tiên chia theo dấu câu và cụm ý, với ngưỡng 60 ký tự và thời lượng tối thiểu 1 giây cho các trang chia thông thường. Lời đáp ngắn như “Vâng.” được giữ riêng; câu quá ngắn để chia an toàn vẫn có cảnh báo cần xem.\n- Chia phụ đề chỉ tác động phần hiển thị và xuất phụ đề; giữ nguyên câu nguồn, bản dịch, ID, timestamp, nhóm và audio TTS. Không gọi thêm AI để chia câu.\n- Không đổi engine nhận diện mặc định. WhisperX và các tính năng phân tích thử nghiệm tiếp tục giữ trạng thái thử nghiệm; tốc độ phụ thuộc thiết bị và dữ liệu, chưa công bố cải thiện độ chính xác phân định người nói trên phim dài.\n",
-  "pub_date": "2026-10-07T13:20:12Z",
+  "version": "1.0.79",
+  "notes": "# GenSub 1.0.79\n\n- Sửa lỗi Faster-Whisper trong 1.0.78 có thể dính nhiều lời thoại thành một đoạn rất dài. Bỏ việc đưa lời thoại của khối trước vào prompt khối sau; checkpoint nhận diện cũ bị ảnh hưởng được làm mới.\n- Câu nguồn quá dài có timestamp từng từ hợp lệ được chia tại dấu câu, khoảng nghỉ và cụm ý. Bảng tiến độ nhận diện dùng cùng cách chia với kết quả cuối. Giữ nội dung đã nhận diện và lời đáp ngắn độc lập; câu thiếu căn cứ thời gian có cảnh báo cần xem.\n- Chế độ Auto tự chuẩn bị thư viện NVIDIA còn thiếu, kiểm tra đầy đủ và thử nhận diện thực trước khi dùng GPU. Thư viện được lưu riêng cho GenSub; lần đầu tải khoảng 895 MiB, có tiến độ và có thể dừng. Chế độ CPU không tải phần này. Nếu GPU không dùng được, Auto báo nguyên nhân và tiếp tục bằng CPU khi có thể.\n- Giữ model, cấu hình nhận diện và cách chia phụ đề hiển thị 60 ký tự/1 giây hiện có. Không gọi thêm AI để chia câu; không sửa dữ liệu dự án cũ hoặc tự tạo lại audio TTS.\n- Đã kiểm thử trên sáu phút đầu video gặp lỗi và kiểm tra hồi quy tự động. Tốc độ phụ thuộc thiết bị; chưa công bố tăng tốc CPU hoặc kết quả toàn phim. Không đổi engine mặc định; WhisperX và các tính năng phân tích thử nghiệm giữ trạng thái hiện có.\n",
+  "pub_date": "2026-10-07T15:45:51Z",
   "mandatory": false,
   "min_version": "1.0.74",
   "channel": "stable",
   "build": "official",
-  "release_notes_url": "https://github.com/genseovn/gensub-releases/releases/tag/v1.0.78",
+  "release_notes_url": "https://github.com/genseovn/gensub-releases/releases/tag/v1.0.79",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSZnB3YlhDM1VCVGh5TTByUFRjY1lSL1ZrcmhUcStSdENIZ0U0UVlITDEwbTlOcXB2ZmJIMVRyWkdJR0VLT0Fta0dKM0ZQUVNTL1RqejNweFp4Qmo3VWQ1YkxOdzRYMUFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMzc5MTI5CWZpbGU6R2VuU3ViXzEuMC43OF94NjQtc2V0dXAuZXhlCjNscVdqa3pnRkJPY3JNSVc2RzdQbEE5eFZNdEdFemh6V2VZbFRqREFEMTlKUFYzWEk2c1RlN3RNUUJqZFJxa2ZWOTdrbFdsbFFadXg4QmhKbU1vZkFnPT0K",
-      "url": "https://github.com/genseovn/gensub-releases/releases/download/v1.0.78/GenSub_1.0.78_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSZnB3YlhDM1VCVGlFTktna0tZNjZ1UXg2a0RoVGJrdjlScGg5czhNZmZsN0Jydlg2YS9HNGhyOVNoWmd6RFp4Y0pDTjdveDl2WUk1TEcvSnFHekM0ckpmSE5FZnA3R1FnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMzg3ODE2CWZpbGU6R2VuU3ViXzEuMC43OV94NjQtc2V0dXAuZXhlCmlQWkQrd1ZvTDVxRXdtZUZCdTZsa3B4cmFOYTZyakd5YWN6MUhJdC9iT1VxdWVQZXVZb2hySXZFUjB0czZpcW9vVGgvNUlDQXFmUnJERWozajdPNEF3PT0K",
+      "url": "https://github.com/genseovn/gensub-releases/releases/download/v1.0.79/GenSub_1.0.79_x64-setup.exe"
     }
   }
 }
