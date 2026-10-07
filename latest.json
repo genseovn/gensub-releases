@@ -1,16 +1,16 @@
 {
-  "version": "1.0.77",
-  "notes": "# GenSub 1.0.77\n\n- Thêm WhisperX thử nghiệm: nhận diện lời nói, căn thời gian từng chữ và tùy chọn phân định người nói trong cùng quy trình. Nhãn người nói hiển thị trong bảng phụ đề và được dùng làm ngữ cảnh dịch GS Credit/OpenCode.\n- WhisperX có runtime riêng; phân định người nói cần quyền truy cập model Hugging Face. Thiết bị không tương thích GPU có thể chạy CPU. Chưa khẳng định nhanh hơn Faster-Whisper trên phim dài.\n- GS Credit V2/V3 và OpenCode V2 chọn những câu cần bằng chứng xưng hô cùng câu lân cận, bỏ qua phân tích giọng ở đoạn thuyết minh/hướng dẫn không có rủi ro. Vẫn dịch đầy đủ nguồn và giữ khóa thủ công, thời gian câu và TTS.\n- Tái sử dụng người nói WhisperX đáng tin và cache đã có; tiếp tục phiên V3 đang chạy với bằng chứng đã chốt, kể cả kết quả cuối chưa nhận đủ.\n- Faster-Whisper và WhisperX không tự bật Demucs ở chế độ xử lý tự động; vẫn giữ lựa chọn tách giọng chủ động.\n- WhisperX và các công tắc phân tích bổ sung giữ trạng thái thử nghiệm; không đổi engine mặc định hoặc tự gán giọng đọc TTS.\n",
-  "pub_date": "2026-10-06T04:18:32Z",
+  "version": "1.0.78",
+  "notes": "# GenSub 1.0.78\n\n- Faster-Whisper tự kiểm tra khả năng chạy thực tế trong chế độ Auto. Khi GPU không dùng được hoặc nhận diện bị kẹt, tác vụ có thể tiếp tục bằng CPU với cùng model và phần đã nhận diện được lưu lại. Lỗi không phục hồi được có thông báo rõ để người dùng xử lý.\n- Hiển thị bước đang chạy, thời gian chờ, cảnh báo và tiến độ nhận diện; tránh giữ một tỷ lệ cố định khiến người dùng tưởng tác vụ vẫn tiến triển.\n- Phân định người nói Sherpa dùng chung kết quả phân tích lượt thoại và người nói, tránh quét toàn bộ audio hai lần. Có cache, checkpoint và tiến độ theo lượng audio đã xử lý; giữ các gán người nói thủ công.\n- Phụ đề hiển thị ưu tiên chia theo dấu câu và cụm ý, với ngưỡng 60 ký tự và thời lượng tối thiểu 1 giây cho các trang chia thông thường. Lời đáp ngắn như “Vâng.” được giữ riêng; câu quá ngắn để chia an toàn vẫn có cảnh báo cần xem.\n- Chia phụ đề chỉ tác động phần hiển thị và xuất phụ đề; giữ nguyên câu nguồn, bản dịch, ID, timestamp, nhóm và audio TTS. Không gọi thêm AI để chia câu.\n- Không đổi engine nhận diện mặc định. WhisperX và các tính năng phân tích thử nghiệm tiếp tục giữ trạng thái thử nghiệm; tốc độ phụ thuộc thiết bị và dữ liệu, chưa công bố cải thiện độ chính xác phân định người nói trên phim dài.\n",
+  "pub_date": "2026-10-07T13:20:12Z",
   "mandatory": false,
   "min_version": "1.0.74",
   "channel": "stable",
   "build": "official",
-  "release_notes_url": "https://github.com/genseovn/gensub-releases/releases/tag/v1.0.77",
+  "release_notes_url": "https://github.com/genseovn/gensub-releases/releases/tag/v1.0.78",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSZnB3YlhDM1VCVGtNSWFuSFFRa0ZMTWRubHQxUE5YOVpRUkpnN0hxbERxOVdZMEhCV2J3R3k5dmxEeG0wSDA5UmdQTUc1WVFQaUZSUEE5Q05BRDF4LzY4cENIM2I5TFFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMjYwMjY2CWZpbGU6R2VuU3ViXzEuMC43N194NjQtc2V0dXAuZXhlCktSZllVVVlnYjEzM0kybkFXT2c2dWxFYVdDUHpqM1ZIQkxWZVN3MTBkc2RYS2ovTk9rcG9Fd2syNkYyZTFIemR2cDdrdzlhYTYvMTZNNWxIQkFIUkRBPT0K",
-      "url": "https://github.com/genseovn/gensub-releases/releases/download/v1.0.77/GenSub_1.0.77_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSZnB3YlhDM1VCVGh5TTByUFRjY1lSL1ZrcmhUcStSdENIZ0U0UVlITDEwbTlOcXB2ZmJIMVRyWkdJR0VLT0Fta0dKM0ZQUVNTL1RqejNweFp4Qmo3VWQ1YkxOdzRYMUFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMzc5MTI5CWZpbGU6R2VuU3ViXzEuMC43OF94NjQtc2V0dXAuZXhlCjNscVdqa3pnRkJPY3JNSVc2RzdQbEE5eFZNdEdFemh6V2VZbFRqREFEMTlKUFYzWEk2c1RlN3RNUUJqZFJxa2ZWOTdrbFdsbFFadXg4QmhKbU1vZkFnPT0K",
+      "url": "https://github.com/genseovn/gensub-releases/releases/download/v1.0.78/GenSub_1.0.78_x64-setup.exe"
     }
   }
 }
